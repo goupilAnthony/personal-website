@@ -39,12 +39,12 @@ const IntroSubtitle = styled(Typography)`
 const Loop = () => {
     return (
         <TextLoop delay={2000} interval={[1200,1200,1200,1200,1200,2200]}>
-            <IntroLoopedText>curieux</IntroLoopedText>
-            <IntroLoopedText>enthousiaste</IntroLoopedText>
-            <IntroLoopedText>passionné</IntroLoopedText>
-            <IntroLoopedText>ingénieux</IntroLoopedText>
-            <IntroLoopedText>tolérant</IntroLoopedText>
-            <IntroLoopedText>Anthony</IntroLoopedText>
+            <IntroLoopedText>curieux<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}>.....</span></IntroLoopedText>
+            <IntroLoopedText>enthousiaste<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}></span></IntroLoopedText>
+            <IntroLoopedText>passionné<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}>...</span></IntroLoopedText>
+            <IntroLoopedText>ingénieux<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}>...</span></IntroLoopedText>
+            <IntroLoopedText>tolérant<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}>....</span></IntroLoopedText>
+            <IntroLoopedText>Anthony<span style={{color:'white'}}>.</span><span style={{color:'#ffffff00'}}>.....</span></IntroLoopedText>
         </TextLoop>
     )
 }
@@ -69,7 +69,7 @@ const CustomIntro = () => {
             </Bounce>
             <Slide left cascade delay={700}>
                 <div>
-                    <IntroTitle variant="h1">Bonjour, je suis <Loop />.</IntroTitle>
+                    <IntroTitle variant="h1">Bonjour, <span style={{whiteSpace:'nowrap'}}>je suis</span> <Loop /></IntroTitle>
                     <IntroSubtitle variant="p">Ingénieur Python, spécialisé Backend / Data</IntroSubtitle>
                 </div>
             </Slide>
