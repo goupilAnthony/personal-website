@@ -6,7 +6,8 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import AboutMDX from "../sections/about"
+//import AboutMDX from "../sections/about"
+import CustomAbout from './CustomAbout'
 
 const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
@@ -38,7 +39,7 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <AboutMDX />
+        <CustomAbout />
       </Inner>
     </Content>
   </div>
