@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paper, Typography, Divider, IconButton } from '@material-ui/core'
+import { Paper, Typography, Divider, IconButton, Tooltip } from '@material-ui/core'
 import styled from 'styled-components'
 import Emoji from './Emoji'
 import LaunchIcon from '@material-ui/icons/Launch';
@@ -28,7 +28,7 @@ const CardTitle = styled(Typography)`
     padding-top: 10px !important;
 `
 
-const ProjectCard = ({ title, emoji, content, link }) => {
+const ProjectCard = ({ title, emoji, content, link, tooltip }) => {
     return (
         <CustomPaper elevation={15}>
             <CardTitle variant="h5" align="center" gutterBottom ><Emoji symbol={emoji} size="1rem" /> {title}</CardTitle>
@@ -37,9 +37,11 @@ const ProjectCard = ({ title, emoji, content, link }) => {
                 {content}
             </CardContent>
             <div style={{display:'flex', justifyContent:'flex-end'}}>
-                <CardLinkIcon href={link}>
-                    <LaunchIcon />
-                </CardLinkIcon>
+                <Tooltip title={tooltip}>
+                    <CardLinkIcon href={link} target="_blank" rel="noreferrer noopener">
+                        <LaunchIcon />
+                    </CardLinkIcon>
+                </Tooltip>
             </div>
         </CustomPaper>
     )
