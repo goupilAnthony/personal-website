@@ -6,9 +6,9 @@ import Content from "../elements/content"
 import SVG from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import ProjectsMDX from "../sections/projects"
+//import ProjectsMDX from "../sections/projects"
 
-import CustomSecondSection from "../components/CustomSecondSection"
+import CustomProjects from "../components/CustomProjects"
 
 const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) => (
   <div>
@@ -21,7 +21,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
     />
     <Content speed={0.4} offset={offset + 0.2} factor={factor}>
       <Inner>
-        <CustomSecondSection />
+        <CustomProjects />
       </Inner>
     </Content>
     <Divider speed={0.1} offset={offset} factor={factor}>
