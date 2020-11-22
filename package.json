@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "Anthony",
+  "description": "Landing page Anthony Goupil freelance developer",
+  "version": "0.1.0",
+  "author": "Anthony Goupil",
+  "license": "0BSD",
+  "starter-name": "gatsby-starter-portfolio-cara",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@lekoarts/gatsby-theme-cara": "^1.2.18",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "babel-plugin-styled-components": "^1.12.0",
+    "fontsource-roboto": "^3.0.3",
+    "gatsby": "^2.25.3",
+    "gatsby-image": "^2.6.0",
+    "gatsby-plugin-google-analytics": "^2.4.1",
+    "gatsby-plugin-manifest": "^2.5.2",
+    "gatsby-plugin-netlify": "^2.4.0",
+    "gatsby-plugin-offline": "^3.3.3",
+    "gatsby-plugin-sharp": "^2.9.0",
+    "gatsby-plugin-styled-components": "^3.5.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
+    "gatsby-source-filesystem": "^2.6.0",
+    "gatsby-transformer-sharp": "^2.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2",
+    "react-text-loop": "^2.3.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
