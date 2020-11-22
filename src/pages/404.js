@@ -1,4 +1,7 @@
 import React from 'react'
+import { Parallax } from "react-spring/renderprops-addons.cjs"
+import Layout from "../@lekoarts/gatsby-theme-cara/components/layout"
+import Hero from "../@lekoarts/gatsby-theme-cara/components/hero"
 import styled from 'styled-components'
 
 const UnknowPage = styled.div`
@@ -9,7 +12,9 @@ const UnknowPage = styled.div`
 
 const Unknow = () => {
     return (
-        <UnknowPage />
+        <Layout>
+            <Hero />
+        </Layout>
     )
 }
 
