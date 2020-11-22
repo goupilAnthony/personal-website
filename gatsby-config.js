@@ -12,7 +12,14 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitleAlt: `Anthony - Ingénieur Python`,
+    siteTitle: `Anthony Goupil`,
+    siteTitleAlt: `Anthony Goupil - Ingénieur Python`,
+    siteHeadline: `Anthony Goupil - Ingénieur Python`,
+    siteUrl: `https://anthonygoupil.netlify.app`,
+    siteDescription: `Site personnel d'Anthony Goupil, développeur indépendant.`,
+    siteLanguage: `fr`,
+    siteImage: `/goupil_horizontal_black_with_icon_logo.png`,
+    author: `@gougou934`,
   },
   plugins: [
     {
