@@ -30,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Anthony - Ingénieur Python`,
+        short_name: `Anthony`,
+        description: `Personnal website of Anthony Goupil, python developer`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
@@ -44,7 +44,7 @@ module.exports = {
             type: `image/png`,
           },
           {
-            src: `/android-chrome-512x512.png`,
+            src: `/fox-icon-512.png`,
             sizes: `512x512`,
             type: `image/png`,
           },
