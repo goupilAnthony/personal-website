@@ -10,7 +10,18 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      <button
+      
+      Copyright ATLAS SOLUTIONS &copy; {new Date().getFullYear()}. All rights reserved.
+      <br />
+    </Box>
+  )
+}
+
+export default Footer
+
+const DarkModeToggleButton = ({ toggleColorMode, isDark }) => {
+  return (
+    <button
         sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
         onClick={toggleColorMode}
         type="button"
@@ -18,10 +29,5 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
-      <br />
-    </Box>
   )
 }
-
-export default Footer
