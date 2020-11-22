@@ -3,7 +3,7 @@ import TextLoop from "react-text-loop"
 import styled from "styled-components"
 import Img from 'gatsby-image'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Bounce, Slide } from 'react-reveal'
+import { Bounce } from 'react-reveal'
 import { Typography } from '@material-ui/core'
 
 const IntroContainer = styled.div`
