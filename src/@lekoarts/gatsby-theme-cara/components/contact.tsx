@@ -8,7 +8,8 @@ import SVG from "./svg"
 import { UpDown, UpDownWide, waveAnimation } from "../styles/animations"
 import Footer from "./footer"
 // @ts-ignore
-import ContactMDX from "../sections/contact"
+//import ContactMDX from "../sections/contact"
+import CustomContact from './CustomContact'
 
 const InnerWave = styled.div`
   path {
@@ -36,7 +37,7 @@ const Contact = ({ offset, factor = 1 }: { offset: number; factor?: number }) =>
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <ContactMDX />
+        <CustomContact />
       </Inner>
       <Footer />
     </Content>
