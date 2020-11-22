@@ -67,12 +67,10 @@ const CustomIntro = () => {
             <Bounce top>
                 <IntroImg fluid={image.file.childImageSharp.fluid} />
             </Bounce>
-            <Slide left cascade delay={700}>
                 <div>
                     <IntroTitle variant="h1">Bonjour, <span style={{whiteSpace:'nowrap'}}>je suis</span> <Loop /></IntroTitle>
                     <IntroSubtitle variant="p">Ingénieur Python, spécialisé Backend / Data</IntroSubtitle>
                 </div>
-            </Slide>
         </IntroContainer>
     )
 }
