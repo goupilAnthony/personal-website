@@ -22,19 +22,22 @@ const cards = [
         \t- Cloud Functions (fonctions  d'execution de code)
         \t- Cloud SQL (serveur PostgreSQL)
         Language: Python`,
-        link: "https://www.lecryptopolitain.fr/"
+        link: "https://www.lecryptopolitain.fr/",
+        tooltip: "Site web du Cryptopolitain"
     },
     {
         title: "Cool Parents Make Happy Kids",
         emoji: "👶",
         content: "...",
         link: "",
+        tooltip: ""
     },
     {
         title: "Orange",
         emoji: "📺",
         content: "...",
-        link: ""
+        link: "",
+        tooltip: ""
     }
 ]
 
@@ -44,14 +47,14 @@ const CustomSecondSection = () => {
         <Fragment>
             <CustomTitre variant="h3"><Emoji symbol="✔️" size="1.8rem"/> Projets</CustomTitre>
             <Grid container spacing={3}>
-                {cards.map(({title, emoji, content, link}, index) => {
-                    var slideLeft = index%2 == 0 ? true : false 
-                    var slideRight =  index%2 == 0 ? false : true 
+                {cards.map(({title, emoji, content, link, tooltip}, index) => {
+                    var slideLeft = index%2 === 0 ? true : false 
+                    var slideRight =  index%2 === 0 ? false : true 
                     console.log(title, slideLeft, slideRight)
                     return (
                         <Grid item xs={12} sm={6} key={index}>
                             <Slide left={slideLeft} right={slideRight}>
-                                    <ProjectCard title={title} emoji={emoji} content={content} link={link} />
+                                    <ProjectCard title={title} emoji={emoji} content={content} link={link} tooltip={tooltip}/>
                             </Slide>
                         </Grid>
                         )
