@@ -11,6 +11,6 @@ exports.createPages = async ({ actions }, themeOptions) => {
   })
   createPage({
     path: "404",
-    component: require.resolve(`./src/@lekoarts/gatsby-theme-cara/templates/404.js`),
+    component: require.resolve(`./src/pages/404.js`),
   })
 }
