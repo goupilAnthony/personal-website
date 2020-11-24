@@ -18,7 +18,7 @@ module.exports = {
     siteUrl: `https://anthonygoupil.netlify.app`,
     siteDescription: `Site personnel d'Anthony Goupil, développeur indépendant.`,
     siteLanguage: `fr`,
-    siteImage: `/goupil_horizontal_black_with_icon_logo.png`,
+    siteImage: `/fox-icon-512.png`,
     author: `@gougou934`,
   },
   plugins: [
