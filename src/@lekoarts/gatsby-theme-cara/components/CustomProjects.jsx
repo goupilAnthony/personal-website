@@ -19,23 +19,30 @@ const cards = [
         Architecture Google Cloud:
         \t- Cloud Scheduler (cron jobs pour déclencher des actions)
         \t- PubSub (faire transiter des messages entre les fonctions)
-        \t- Cloud Functions (fonctions  d'execution de code)
+        \t- Cloud Functions (fonctions d'execution de code serverless isolées)
         \t- Cloud SQL (serveur PostgreSQL)
-        Language: Python`,
+        Language: Python
+        Technique: GCP, graphql, Data engineering`,
         link: "https://www.lecryptopolitain.fr/",
-        tooltip: "Site web du Cryptopolitain"
+        tooltip: "Site du Cryptopolitain"
     },
     {
         title: "Cool Parents Make Happy Kids",
         emoji: "👶",
-        content: "...",
-        link: "",
-        tooltip: ""
+        content: `Développement et mise en production d'un middleware Woocommerce -> PostgreSQL\n
+        Déploiement middleware et base de données sur Heroku\n
+        Language: Python
+        Technique: Heroku, Linux, Woocommerce, Flask, Data engineering`,
+        link: "https://www.coolparentsmakehappykids.com/",
+        tooltip: "Site de CPMHK"
     },
     {
         title: "Orange",
         emoji: "📺",
-        content: "...",
+        content: `Développement et maintenance de campagnes de tests automatisés pour les décodeur TV d'Orange.\n
+        Tests de bout-en-bout en environnement de production, développement de librairies partagées à des projets connexes.\n
+        Language: Python
+        Technique: Linux, Jenkins, Jira, Gitflow, Gstreamer, pytest, pytesseract, Flask`,
         link: "",
         tooltip: ""
     }
