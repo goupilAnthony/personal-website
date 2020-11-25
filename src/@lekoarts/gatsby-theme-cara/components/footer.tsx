@@ -1,5 +1,8 @@
 /** @jsx jsx */
 import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
+import Emoji from "./Emoji"
+import { Typography } from '@material-ui/core'
+
 
 const Footer = () => {
   const [colorMode, setColorMode] = useColorMode()
@@ -10,9 +13,7 @@ const Footer = () => {
 
   return (
     <Box as="footer" variant="footer">
-      
-      Copyright ATLAS SOLUTIONS &copy; {new Date().getFullYear()}. All rights reserved.
-      <br />
+      <Typography variant="body2">Codé avec <Emoji symbol="🧡" label="heart" /> par ATLAS SOLUTIONS &copy; {new Date().getFullYear()}.</Typography>
     </Box>
   )
 }
