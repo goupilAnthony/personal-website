@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Parallax } from "react-spring/renderprops-addons.cjs"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
@@ -9,6 +9,7 @@ import Contact from "../components/contact"
 import 'fontsource-roboto'
 
 const Cara = () => {
+
   return (
     <Layout>
       <Parallax pages={5}>

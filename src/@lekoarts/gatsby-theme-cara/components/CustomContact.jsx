@@ -1,8 +1,9 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide'
-import { Typography } from '@material-ui/core'
+import { Typography, Grid } from '@material-ui/core'
 import Emoji from './Emoji'
 import styled from 'styled-components'
+import Form from './Formspree'
 
 const ContactTitle = styled(Typography)`
     font-weight: 800 !important;
@@ -11,11 +12,13 @@ const ContactTitle = styled(Typography)`
 `
 
 const Contact = () => {
+
     return (
         <>
             <Slide left>
                 <ContactTitle variant="h3"><Emoji symbol="💌" label="letter"/> Contact</ContactTitle>
             </Slide>
+            <Form/>
         </>
     )
 }
