@@ -10,6 +10,14 @@ const CustomTitre = styled(Typography)`
     margin-bottom: 8vh !important;
     text-shadow: 0px 7px 16px black !important;
 `
+const CustomAllProjectsLink = styled(Typography)`
+    margin-top: 5vh !important;
+    & a{
+        display: inline-block !important;
+        color: white !important;
+    }
+    
+`
 
 const cards = [
     {
@@ -45,7 +53,16 @@ const cards = [
         Technique: Linux, Jenkins, Jira, Gitflow, Gstreamer, pytest, pytesseract, Flask`,
         link: "",
         tooltip: ""
+    },
+    {
+        title: "Qualiextra",
+        emoji: "🍸",
+        content: `Développement d'un système de tracking et de reporting automatisé.\n
+        Technos: Python3, Cron, Linux, Selenium, bs4. mongoDB, Heroku`,
+        link: "",
+        tooltip: ""
     }
+
 ]
 
 const CustomSecondSection = () => {
@@ -67,6 +84,7 @@ const CustomSecondSection = () => {
                         )
                 })}
             </Grid>
+            <CustomAllProjectsLink variant="body1" align="center"><a href="https://www.linkedin.com/in/anthony-goupil-65a2a2130/" target="_blank" rel="noreferrer">Voir tout mes projets</a></CustomAllProjectsLink>
         </Fragment>
     )
 }
