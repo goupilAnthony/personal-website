@@ -2,7 +2,7 @@ import React from 'react'
 import { Paper, Typography, Divider, IconButton, Tooltip } from '@material-ui/core'
 import styled from 'styled-components'
 import Emoji from './Emoji'
-import LaunchIcon from '@material-ui/icons/Launch';
+import LaunchIcon from '@material-ui/icons/Launch'
 
 const CustomPaper = styled(Paper)`
     background-color: #2d3748 !important;
