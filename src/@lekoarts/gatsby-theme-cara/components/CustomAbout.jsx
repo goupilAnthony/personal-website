@@ -33,7 +33,7 @@ const About = () => {
                 <Emoji symbol="💻" label="computer" /> J'ai appris à développer grâce à internet, seul dans ma chambre mais entouré sur la toile. Grâce à ces compétences j'ai eu la chance d'intégrer la première promotion de l'école IA Microsoft<Emoji symbol="🤖" label="brain"/> en Septembre 2019.
                 <br/>
                 <br/>
-                Par la suite j'ai travaillé pour plusieurs cabinets de conseil, avant de m'installer en tant qu'indépendant et de créer la société <strong>ATLAS SOLUTIONS</strong> avec mon associé.
+                Aujourd'hui je travaille pour des cabinets de conseil ainsi qu'en indépendant.
             </Typography>
         </>
     )
